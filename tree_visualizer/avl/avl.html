@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL Tree Visualizer</title>
+    <link rel="stylesheet" href="avl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Pompiere&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>AVL Tree Visualizer</h1>
+    <div class="controls">
+        <input type="number" id="value" placeholder="Value">
+        <button class="custom-btn btn-7" onclick="insertNode()"><span>Insert</span></button>
+        <button class="custom-btn btn-7" onclick="deleteNode()"><span>Delete</span></button>
+        <button class="custom-btn btn-7" onclick="searchNode()"><span>Search</span></button>
+    </div>
+    <div id="tree-visualization"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="avl.js"></script>
+</body>
+</html>

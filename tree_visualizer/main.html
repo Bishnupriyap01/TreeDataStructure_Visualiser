@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Visualizers</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Pompiere&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tree Visualizers</h1>
+        <div class="menu-button" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+        </div>
+    </header>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#exit">Exit</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img src="img/avl.png" alt="AVL Tree">
+                <div class="overlay">
+                    <a href="avl/avl.html">AVL Tree Visualizer</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/bst.png" alt="BST Tree">
+                <div class="overlay">
+                    <a href="bst/index.html">BST Visualizer</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+            const menuButton = document.querySelector('.menu-button');
+            menuButton.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

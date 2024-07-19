@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BST Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Pompiere&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>BST Visualizer</h1>
+    <div class="controls">
+        <input type="number" id="value" placeholder="Value">
+        <button class="custom-btn btn-7" onclick="insertNode()"><span>Insert</span></button>
+        <button class="custom-btn btn-7" onclick="deleteNode()"><span>Delete</span></button>
+        <button class="custom-btn btn-7" onclick="searchNode()"><span>Search</span></button>
+        <button class="custom-btn btn-7" onclick="preorderTraversal()"><span>Preorder</span></button>
+        <button class="custom-btn btn-7" onclick="inorderTraversal()"><span>Inorder</span></button>
+        <button class="custom-btn btn-7" onclick="postorderTraversal()"><span>Postorder</span></button>
+    </div>
+    <div id="tree-visualization"></div>
+    <div id="traversal-result-container">
+        
+        <svg id="traversal-result"></svg>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
